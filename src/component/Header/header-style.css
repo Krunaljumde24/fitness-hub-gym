@@ -1,0 +1,24 @@
+.heading {
+    font-weight: bolder;
+    font-size: 30px;
+    vertical-align: middle;
+    color: #1A1B41;
+}
+
+li.nav-item {
+    font-size: 20px;
+    font-weight: bold;
+    /* color: #1A1B41; */
+}
+
+.nav-link {
+    color: #1A1B41;
+}
+
+li.nav-item:hover {
+    background-color: rgb(196, 133, 255);
+}
+
+nav {
+    background-color: #BAFF29;
+}
