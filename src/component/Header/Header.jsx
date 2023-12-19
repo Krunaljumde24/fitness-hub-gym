@@ -17,23 +17,23 @@ function Header() {
                     <div class="collapse navbar-collapse" id="fitnessHubNavbarContent">
                         <ul class="navbar-nav mx-auto">
                             <li className="nav-item">
-                                <a href="#" className="nav-link active" aria-current="page">
+                                <a href="#home" className="nav-link active" aria-current="page">
                                     Home
                                 </a>
                             </li>
 
                             <li className="nav-item">
-                                <a href="#" className="nav-link active" aria-current="page">
+                                <a href="#schedule" className="nav-link active" aria-current="page">
                                     Schedule
                                 </a>
                             </li>
                             <li className="nav-item">
-                                <a href="#" className="nav-link active" aria-current="page">
-                                    Classes
+                                <a href="#classes" className="nav-link active" aria-current="page">
+                                Classes
                                 </a>
                             </li>
                             <li className="nav-item">
-                                <a href="#" className="nav-link active" aria-current="page">
+                                <a href="#pricing" className="nav-link active" aria-current="page">
                                     Pricing
                                 </a>
                             </li>

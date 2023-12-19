@@ -1,0 +1,31 @@
+.schedule-container {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    height: 350px;
+    /* background-color: #B6BBC4; */
+}
+
+.exercise {
+    color: blue;
+}
+
+.part1 {
+    width: 50%;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+}
+
+.para {
+    font-size: 18px;
+}
+
+.part2 {
+    width: 80%;
+    height: 200px;
+    border-radius: 6px;
+    margin-right: auto;
+    margin-left: auto;
+    background: rgb(29, 189, 152);
+    background: linear-gradient(90deg, rgba(29, 189, 152, 1) 0%, rgba(48, 89, 198, 0.6839110644257703) 100%);
+}

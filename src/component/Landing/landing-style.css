@@ -1,6 +1,7 @@
 .landing {
-    background-color: #F9F9E0;
+    /* background-color: #F9F9E0; */
     height: 500px;
+    border-bottom: 1px solid black;
 }
 
 .quote {
@@ -8,6 +9,55 @@
     font-weight: bolder;
 }
 
-.bodybuilding_image {
-    height: 450px;
+.box-img img {
+    height: 500px;
 }
+
+.left {
+    position: relative;
+    /* border: 3px solid green; */
+}
+
+.left-part {
+    margin: 0;
+    top: 20%;
+    position: absolute;
+}
+
+.highlight {
+    transition: 0.5s;
+}
+
+.highlight:hover {
+    background-color: cadetblue;
+
+}
+
+/* .box-img {
+    position: absolute;
+    top: -12%;
+    left: 13%;
+    z-index: 10;
+}
+
+.box-img img {
+    width: 121.5%;
+}
+
+.box-img-wrapper{
+    position: relative;
+    z-index: 1;
+}
+.box-01 {
+    width: 450px;
+    height: 450px;
+    border-radius: 100%;
+    border: 25px solid rgba(141, 141, 235, 1);
+}
+
+.box-02 {
+    width: 300px ;
+    height: 300px;
+    border-radius: 100%;
+    border: 25px solid #b5a9f3;
+} */

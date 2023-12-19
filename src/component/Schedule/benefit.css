@@ -1,0 +1,43 @@
+.benefits {
+    position: relative;
+}
+
+.benefit {
+    margin-left: 10px;
+    width: 350px;
+    height: 52px;
+    display: flex;
+    font-size: 12px;
+    font-weight: bold;
+    position: absolute;
+    top: 75px;
+    left: 20px;
+    color: white;
+}
+
+img {
+    padding: 3px;
+    border-radius: 4px;
+}
+.b1 {
+    /* margin-left: %; */
+}
+
+.b2 {
+    margin-left: 33%;
+
+}
+
+.b3 {
+    margin-left: 66%;
+
+}
+
+.right {
+    margin-left: 20px;
+    line-height: 12px;
+}
+
+.left>img {
+    background-color: white;
+}
