@@ -35,7 +35,7 @@ function Benefits() {
         <div className="benefits">
             {bnfts.map((bnf) => {
                 return (
-                    <div className={bnf.class} key={bnf.id}>
+                    <div className={bnf.class} key={bnf.id} data-aos="zoom-in" data-aos-duration="1500">
                         <div className="left">
                             <img src={bnf.imgUrl} />
                         </div>
