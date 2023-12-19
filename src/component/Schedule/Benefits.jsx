@@ -5,38 +5,47 @@ import img3 from '../../assets/icons8-battle-ropes-50.png'
 import './benefit.css'
 
 function Benefits() {
+
+    let bnfts = [
+        {
+            id: 1,
+            class: 'benefit b1',
+            imgUrl: img1,
+            heading: 'Healthy Life',
+            content: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corrupti, aspernatur.'
+        },
+        {
+            id: 2,
+            class: 'benefit b2',
+            imgUrl: img2,
+            heading: 'Increased Flexibility',
+            content: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corrupti, aspernatur.'
+        },
+        {
+            id: 3,
+            class: 'benefit b3',
+            imgUrl: img3,
+            heading: 'Reducing Blood Pressure',
+            content: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corrupti, aspernatur.'
+        }
+
+    ]
+
     return (
         <div className="benefits">
-            <div className="benefit b1">
-                <div className="left">
-                    <img src={img1} alt="img_1" />
-                </div>
-                <div className="right">
-                    <h6>Healthy Life</h6>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corrupti, aspernatur.</p>
-                </div>
-            </div>
-
-            <div className="benefit b2">
-                <div className="left">
-                    <img src={img2} alt="img_2" />
-                </div>
-                <div className="right">
-                    <h6>Increased Flexibility</h6>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corrupti, aspernatur.</p>
-                </div>
-            </div>
-
-            <div className="benefit b3">
-                <div className="left">
-                    <img src={img3} alt="img_3" />
-                </div>
-                <div className="right">
-                    <h6>Reducing Blood Pressure</h6>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corrupti, aspernatur.</p>
-                </div>
-            </div>
-
+            {bnfts.map((bnf) => {
+                return (
+                    <div className={bnf.class} key={bnf.id}>
+                        <div className="left">
+                            <img src={bnf.imgUrl} />
+                        </div>
+                        <div className="right">
+                            <h6>{bnf.heading}</h6>
+                            <p>{bnf.content}</p>
+                        </div>
+                    </div>
+                );
+            })}
         </div>
     )
 }
