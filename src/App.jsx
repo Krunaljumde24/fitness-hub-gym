@@ -21,7 +21,6 @@ function App() {
       <Header />
       <Landing />
       <Schedule />
-      <Classes />
       <Pricing />
       <Footer />
     </>

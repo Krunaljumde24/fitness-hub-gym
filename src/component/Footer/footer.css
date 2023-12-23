@@ -1,4 +1,12 @@
 .footer{
     height: 250px;
     background-color: cornflowerblue;
+    display: flex;
+    justify-content: space-around;
+}
+
+.dabba {
+    width: 150px;
+    height: 150px;
+    background-color: pink;
 }
