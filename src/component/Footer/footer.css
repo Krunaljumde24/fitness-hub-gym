@@ -1,12 +1,43 @@
-.footer{
-    height: 250px;
-    background-color: cornflowerblue;
+footer {
+    background-color: #EEEAFF;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.footer {
     display: flex;
     justify-content: space-around;
+    font-weight: bold;
+}
+
+.logo {
+    width: 40px;
+}
+.site-details {
+    width: 33%;
+    
+}
+
+.company {
+    width: 33%;
+    vertical-align: middle;
+}
+
+.quick-links {
+    width: 33%;
 }
 
 .dabba {
     width: 150px;
     height: 150px;
     background-color: pink;
+}
+
+ul {
+    list-style: none;
+    text-decoration: none;
+}
+
+a {
+    color: black;
 }

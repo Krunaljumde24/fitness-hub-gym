@@ -47,41 +47,43 @@ function Pricing() {
     ]
 
     return (
-        <div className='pricing-container container' id='pricing'>
-            {pricingDetails.map((dtls) => {
-                return (
-                    <div className={dtls.className}
-                        data-aos="zoom-in" data-aos-duration="1500">
-                        <div className="card-body header">
-                            <h2 className='card-title'>
-                                {dtls.heading}
-                            </h2>
-                            <p className='card-text text-center'>
-                                {dtls.price}
-                            </p>
-                        </div>
-                        <div className="card-body">
-                            <ul className='list-group list-group-flush'>
-                                {dtls.listItems.map((item) => {
-                                    return (
+        <div className='pricing-container' id='pricing' >
+            {
+                pricingDetails.map((dtls) => {
+                    return (
+                        <div className={dtls.className}
+                            data-aos="zoom-in" data-aos-duration="1500">
+                            <div className="card-body header">
+                                <h2 className='card-title'>
+                                    {dtls.heading}
+                                </h2>
+                                <p className='card-text text-center'>
+                                    {dtls.price}
+                                </p>
+                            </div>
+                            <div className="card-body">
+                                <ul className='list-group list-group-flush'>
+                                    {dtls.listItems.map((item) => {
+                                        return (
 
-                                        <li class="list-group-item">
-                                            {dtls.heading === 'Premium Member' ?
-                                                <img src={bluedot} /> : <img src={blackdot} />}
-                                            {item}
-                                        </li>
-                                    )
-                                })}
-                            </ul>
-                        </div>
-                        <div className='text-center'>
-                            <button type='button' className='btn btn-primary'>Join Now</button>
-                        </div>
+                                            <li class="list-group-item">
+                                                {dtls.heading === 'Premium Member' ?
+                                                    <img src={bluedot} /> : <img src={blackdot} />}
+                                                {item}
+                                            </li>
+                                        )
+                                    })}
+                                </ul>
+                            </div>
+                            <div className='text-center'>
+                                <button type='button' className='btn btn-primary'>Join Now</button>
+                            </div>
 
-                    </div>
-                )
-            })}
-        </div>
+                        </div>
+                    )
+                })
+            }
+        </div >
     )
 }
 
